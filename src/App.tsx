@@ -1,5 +1,5 @@
 import { useState } from "react";
-import lemonLogo from "/lemon.svg";
+import logo from "/favicon.png";
 import "./App.css";
 
 export default function App() {
@@ -8,7 +8,7 @@ export default function App() {
   return (
     <>
       <div>
-        <img src={lemonLogo} className="logo" alt="Juliana Nocchi logo" />
+        <img src={logo} className="logo" alt="Juliana Nocchi logo" />
       </div>
       <h1 className="text-3xl font-bold underline">My FE Project</h1>
       <div className="card">
