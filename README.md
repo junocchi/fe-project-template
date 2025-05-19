@@ -48,3 +48,27 @@ export default tseslint.config({
   },
 });
 ```
+
+## Updating this template
+
+Most of the packages are at or near their current latest versions as of May 2025.
+Here's what you can do to ensure everything is fully updated:
+
+First, let's check for any outdated packages with npm:
+
+```bash
+npm outdated
+```
+
+Then, update all packages to their latest versions:
+
+```bash
+npm update
+```
+
+For more specific control, you can update major versions if needed:
+
+```bash
+npm install react@latest react-dom@latest
+npm install --save-dev @eslint/js@latest @types/react@latest @types/react-dom@latest @vitejs/plugin-react@latest autoprefixer@latest eslint@latest eslint-plugin-react-hooks@latest eslint-plugin-react-refresh@latest globals@latest postcss@latest tailwindcss@latest typescript@latest typescript-eslint@latest vite@latest
+```
