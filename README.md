@@ -72,3 +72,17 @@ For more specific control, you can update major versions if needed:
 npm install react@latest react-dom@latest
 npm install --save-dev @eslint/js@latest @types/react@latest @types/react-dom@latest @vitejs/plugin-react@latest autoprefixer@latest eslint@latest eslint-plugin-react-hooks@latest eslint-plugin-react-refresh@latest globals@latest postcss@latest tailwindcss@latest typescript@latest typescript-eslint@latest vite@latest
 ```
+
+After running the update commands, I recommend checking that everything works properly by:
+
+Running the development server:
+
+```bash
+npm run dev
+```
+
+Building the project:
+
+```bash
+npm run build
+```
