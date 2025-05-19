@@ -86,3 +86,66 @@ Building the project:
 ```bash
 npm run build
 ```
+
+Commit your changes.
+
+## Connect to your new GitHub repo
+
+Great! Now that you've updated and committed all the dependencies, let's connect your local template repo to a new GitHub repository. Here's a step-by-step guide:
+
+1. Create the new repository on GitHub first
+   Go to github.com, log in to your account, and create a new repository, e.g. "my-new-repo". Don't initialize it with a README, .gitignore, or license so it will be completely empty.
+
+2. Rename your local project (optional)
+   If you want your local directory to match the new repo name:
+
+```bash
+# Navigate up one directory
+cd ..
+
+# Rename the directory
+mv fe-project-template my-new-repo
+
+# Enter the renamed directory
+cd my-new-repo
+```
+
+3. Update your package.json
+   Edit your package.json to update the project name:
+
+```bash
+# Open package.json in your preferred editor and change:
+# "name": "fe-project-template" to "name": "my-new-repo"
+```
+
+4. Change the remote URL
+   Now change the Git remote URL to point to your new GitHub repository:
+
+```bash
+# Check current remote
+git remote -v
+
+# Remove the current origin
+git remote remove origin
+
+# Add the new origin (replace YOUR_USERNAME with your GitHub username)
+git remote add origin https://github.com/YOUR_USERNAME/my-new-repo.git
+```
+
+5. Push your code to the new repository
+
+```bash
+# Push your code to the new repository
+git push -u origin main
+```
+
+6. Verify the connection
+   To make sure everything is properly connected:
+
+```bash
+git remote -v
+```
+
+This should display the new repository URL as your origin.
+
+That's it! Your local template repo is now connected to the new "my-new-repo" repository on GitHub. You can now start building your website using this template as a foundation.
